@@ -74,3 +74,29 @@ body {
 .navbar-nav .nav-link:hover {
 	color: #2c352a;
 }
+.placeholder {
+	background-color: #B1C691;
+	display: inline-block;
+	height: 1em;
+	width: 2em;
+  }
+  .placeholder-glow {
+	animation: placeholder-glow 1.5s infinite alternate;
+  }
+  @keyframes placeholder-glow {
+	from {
+	  background-color: #B1C691;
+	}
+	to {
+	  background-color: #B1C691;
+	}
+  }
+  /* Apply fixed positioning to the entire container */
+  .container {
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999; 
+	max-width: 50%; 
+  }
