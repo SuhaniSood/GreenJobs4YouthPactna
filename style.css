@@ -302,6 +302,13 @@ body {
 	justify-content: space-around;
 }
 
+.underLogos {
+	position: absolute;
+	width: 25vw;
+	top: 15vh;
+	left: 12.5vh;
+}
+
 #tree {
 	height: 200vh;
 	position: absolute;
@@ -317,6 +324,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+	.underLogos {
+		position: absolute;
+		width: 80vw;
+		top: 15vh;
+		left: 10vw;
+	}
 	.earth {
 		position: absolute;
 		width: 100vw;
