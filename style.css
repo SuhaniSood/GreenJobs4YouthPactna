@@ -1,6 +1,7 @@
 body {
 	background-color: #d6e7bc;
 	animation: fade 1.25s;
+	overflow-x: hidden;
 }
 
 /* width */
@@ -302,9 +303,8 @@ body {
 }
 
 #tree {
-	height: 250vh;
+	height: 200vh;
 	position: absolute;
-	bottom: -350vh;
 	left: -50px;
 	z-index: -1;
 }
@@ -542,5 +542,9 @@ body {
 		color: #195a09;
 		font-size: 5vw;
 		margin-top: -10px;
+	}
+
+	#tree {
+		display: none;
 	}
 }
