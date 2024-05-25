@@ -1,5 +1,23 @@
 body {
 	background-color: #d6e7bc;
+	animation: fade 1.25s;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	transition: background 0.3s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #708e68;
+	border-radius: 2.5px;
 }
 
 .navbar-brand {
@@ -26,6 +44,7 @@ body {
 	font-size: 3.5vw;
 	color: #195a09;
 	font-weight: 800;
+	animation: entrance 2s;
 }
 
 .bodySubtitle {
@@ -34,6 +53,7 @@ body {
 	width: 50%;
 	color: #195a09;
 	font-weight: 400;
+	animation: entrance 2.25s;
 }
 
 .btn {
@@ -44,6 +64,7 @@ body {
 	margin-top: 4vw;
 	margin-bottom: 1vw;
 	border: none;
+	animation: entrance 2.5s;
 }
 .btn:hover {
 	background-color: #4c6146;
@@ -55,6 +76,7 @@ body {
 	width: 20%;
 	color: #195a09;
 	font-weight: 300;
+	animation: entrance 2.75s;
 }
 
 .navbar-text {
@@ -75,28 +97,46 @@ body {
 	color: #2c352a;
 }
 .placeholder {
-	background-color: #B1C691;
+	background-color: #b1c691;
 	display: inline-block;
 	height: 1em;
 	width: 2em;
-  }
-  .placeholder-glow {
+}
+.placeholder-glow {
 	animation: placeholder-glow 1.5s infinite alternate;
-  }
-  @keyframes placeholder-glow {
+}
+@keyframes placeholder-glow {
 	from {
-	  background-color: #B1C691;
+		background-color: #b1c691;
 	}
 	to {
-	  background-color: #B1C691;
+		background-color: #b1c691;
 	}
-  }
-  /* Apply fixed positioning to the entire container */
-  .container {
+}
+/* Apply fixed positioning to the entire container */
+.container {
 	position: fixed;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 999; 
-	max-width: 50%; 
-  }
+	z-index: 999;
+	max-width: 50%;
+}
+
+@keyframes entrance {
+	0% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
