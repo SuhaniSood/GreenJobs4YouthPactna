@@ -96,32 +96,6 @@ body {
 .navbar-nav .nav-link:hover {
 	color: #2c352a;
 }
-.placeholder {
-	background-color: #b1c691;
-	display: inline-block;
-	height: 1em;
-	width: 2em;
-}
-.placeholder-glow {
-	animation: placeholder-glow 1.5s infinite alternate;
-}
-@keyframes placeholder-glow {
-	from {
-		background-color: #b1c691;
-	}
-	to {
-		background-color: #b1c691;
-	}
-}
-/* Apply fixed positioning to the entire container */
-.container {
-	position: fixed;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 999;
-	max-width: 50%;
-}
 
 @keyframes entrance {
 	0% {
@@ -140,11 +114,22 @@ body {
 		opacity: 1;
 	}
 }
+
+.card {
+	background-color: #b1c691;
+	max-width: 30vw;
+	padding: 20px;
+	max-height: 55vh;
+	border-radius: 16px;
+	border: none;
+}
+
 .btnPlaceHolder {
-	background-color: #708e68;
-	color: white; /* Text color */
-	font-size: 1.5vw;
-	padding: 0.5em 1.5em;
+	font-family: "Poppins", sans-serif;
+	background-color: #496143;
+	color: white;
+	font-size: 1.25vw;
+	padding: 0.25em 1em;
 	border-radius: 12px;
 	margin-top: 3vw;
 	margin-bottom: 1vw;
@@ -152,4 +137,85 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.image-container {
+	width: 100%;
+	height: 30%;
+	overflow: hidden;
+	border-radius: 16px;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-title {
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #195a09;
+	margin-top: 15px;
+}
+
+.conference {
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin-top: -10px;
+}
+
+.date-and-text {
+	display: flex;
+	align-items: center;
+}
+
+.calenderDate div {
+	padding: 5px 10px;
+	text-align: center;
+	width: 3.5vw;
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+
+.card-text {
+	color: #195a09;
+}
+
+.date {
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	margin-left: 20px;
+}
+
+.dateTop {
+	font-size: 1.2vw;
+	font-weight: 400;
+	color: #195a09;
+}
+
+.dateBottom {
+	margin-top: -20px;
+}
+
+.workshop {
+	width: 40%;
+	text-align: center;
+}
+
+.workshop h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	color: #195a09;
+}
+
+.workshop p {
+	color: #195a09;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 26px;
 }
