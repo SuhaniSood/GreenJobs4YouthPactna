@@ -295,6 +295,11 @@ body {
 	margin-top: -10px;
 }
 
+.workshopContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
 @media only screen and (max-width: 768px) {
 	.bodyHeader {
 		font-size: 12.5vw;
@@ -339,5 +344,194 @@ body {
 
 	.navbar-toggler {
 		display: none;
+	}
+	.workshopContainer {
+		display: block;
+		padding: 10vw;
+	}
+
+	.cardA {
+		background-color: #b1c691;
+		padding: 35px;
+		border-radius: 16px;
+		border: none;
+	}
+
+	.btnPlaceHolder {
+		font-family: "Poppins", sans-serif;
+		background-color: #496143;
+		color: white;
+		font-size: 4vw;
+		padding: 1em 1em;
+		border-radius: 12px;
+		margin-top: 3vw;
+		margin-bottom: 0vw;
+	}
+
+	.image-container {
+		width: 62vw;
+		height: 20vh;
+		overflow: hidden;
+		border-radius: 16px;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.card-title {
+		font-family: "Inter", sans-serif;
+		font-weight: 500;
+		font-size: 5.5vw;
+		color: #195a09;
+		margin-top: 15px;
+	}
+
+	.conference {
+		font-family: "Inter", sans-serif;
+		font-weight: 300;
+		font-size: 4vw;
+		margin-top: -5px;
+	}
+
+	.date-and-text {
+		display: flex;
+		align-items: center;
+	}
+
+	.calenderDate {
+		display: none;
+	}
+
+	.calenderDate div {
+		padding: 3vw 5vw;
+		text-align: center;
+		width: 3.5vw;
+		font-family: "Poppins", sans-serif;
+		color: white;
+		font-size: 3vw !important;
+		display: none;
+	}
+
+	.card-text {
+		color: #195a09;
+	}
+
+	.date {
+		font-family: "Inter", sans-serif;
+		font-weight: 300;
+		margin-left: 0px;
+	}
+
+	.dateTop {
+		font-size: 5vw;
+		font-weight: 400;
+		color: #195a09;
+	}
+
+	.dateBottom {
+		margin-top: -20px;
+	}
+
+	.workshop {
+		width: 100%;
+		text-align: center;
+		margin-top: 20vw;
+	}
+
+	.workshop h1 {
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		color: #195a09;
+	}
+
+	.workshop p {
+		color: #195a09;
+		font-family: "Inter", sans-serif;
+		font-weight: 300;
+		font-size: 5vw;
+	}
+
+	.goalContainer {
+		padding-top: 5%;
+		margin-right: auto;
+		text-align: center;
+		width: 100%;
+		float: right;
+		padding: 20vh 6vw;
+	}
+
+	.goal {
+		width: 100%;
+	}
+
+	.goal h1 {
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		color: #195a09;
+	}
+
+	.goal p {
+		color: #195a09;
+		font-family: "Inter", sans-serif;
+		font-weight: 300;
+		font-size: 5vw;
+	}
+	.image-container-who {
+		border-radius: 30px;
+	}
+
+	.team {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
+
+	.teamHeader {
+		font-family: "Poppins", sans-serif;
+		font-weight: 800;
+		color: #195a09;
+		text-align: center;
+		margin-bottom: 1vw;
+		margin-top: 3vw;
+	}
+
+	.teamContainer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10vw 10vw;
+		padding: 3vw 6vw;
+		width: 100%;
+	}
+	.teamMember {
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		overflow: hidden;
+		text-align: center;
+	}
+	.teamMember img {
+		width: 60vw;
+		height: 60vw;
+		object-fit: cover;
+		display: block;
+		border-radius: 100vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.teamMember .name {
+		font-size: 6.5vw;
+		margin: 1vh 0;
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		color: #195a09;
+	}
+	.teamMember .role {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		color: #195a09;
+		font-size: 5vw;
+		margin-top: -10px;
 	}
 }
