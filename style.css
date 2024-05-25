@@ -258,6 +258,7 @@ body {
 	text-align: center;
 	margin-bottom: 1vw;
 	margin-top: 3vw;
+	border: none;
 }
 
 .teamContainer {
@@ -266,9 +267,9 @@ body {
 	gap: 2vw 10vw;
 	padding: 3vw 6vw;
 	width: 80%;
+	border: none;
 }
 .teamMember {
-	border: 1px solid #ddd;
 	border-radius: 8px;
 	overflow: hidden;
 	text-align: center;
@@ -298,6 +299,13 @@ body {
 .workshopContainer {
 	display: flex;
 	justify-content: space-around;
+}
+
+#tree {
+	height: 250vh;
+	position: absolute;
+	bottom: -350vh;
+	z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
