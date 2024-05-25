@@ -309,7 +309,21 @@ body {
 	z-index: -1;
 }
 
+.earth {
+	position: absolute;
+	width: 32vw;
+	top: 20vh;
+	left: 120vh;
+}
+
 @media only screen and (max-width: 768px) {
+	.earth {
+		position: absolute;
+		width: 100vw;
+		top: 80vh;
+		left: calc(50% - 50vw);
+	}
+
 	.bodyHeader {
 		font-size: 12.5vw;
 	}
@@ -364,6 +378,7 @@ body {
 		padding: 35px;
 		border-radius: 16px;
 		border: none;
+		margin-top: 30vh;
 	}
 
 	.btnPlaceHolder {
