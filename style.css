@@ -305,6 +305,7 @@ body {
 	height: 250vh;
 	position: absolute;
 	bottom: -350vh;
+	left: -50px;
 	z-index: -1;
 }
 
