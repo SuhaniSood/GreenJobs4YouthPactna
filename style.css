@@ -274,8 +274,9 @@ body {
 	text-align: center;
 }
 .teamMember img {
-	width: 100%;
-	height: auto;
+	width: 15vw;
+	height: 15vw;
+	object-fit: cover;
 	display: block;
 	border-radius: 100vw;
 }
@@ -292,4 +293,51 @@ body {
 	color: #195a09;
 	font-size: 0.9vw;
 	margin-top: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.bodyHeader {
+		font-size: 12.5vw;
+	}
+	.bodySubtitle {
+		font-size: 5vw;
+		width: 100%;
+	}
+
+	.btn {
+		font-size: 5vw;
+		padding: 0.5vw 8vw;
+		border-radius: 12px;
+		margin-top: 4vw;
+		margin-bottom: 2vw;
+		border: none;
+		animation: entrance 2.5s;
+	}
+
+	.buttonExplaination {
+		font-family: "Poppins", sans-serif;
+		font-size: 3vw;
+		width: 50%;
+		color: #195a09;
+		font-weight: 300;
+		animation: entrance 2.75s;
+	}
+	.navbar-brand {
+		font-family: "Poppins", sans-serif;
+		font-size: 3vw;
+		color: #195a09;
+		font-weight: 600;
+	}
+
+	#navbarMain {
+		padding: 2vh 3vw;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
 }
