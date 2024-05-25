@@ -6,7 +6,6 @@ body {
 /* width */
 ::-webkit-scrollbar {
 	width: 10px;
-	transition: background 0.3s;
 }
 
 /* Track */
@@ -218,23 +217,26 @@ body {
 	font-size: 1.25vw;
 }
 .goalContainer {
-    padding-top: 10%;
-    margin-right: auto; /* This centers the container horizontally */
-    margin-left: 0; /* Aligning the container to the left */
-    width: 40%; /* Limiting the width to maintain readability */
-    text-align: center; /* Aligning the text to the center within the container */
+	padding-top: 10%;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+	float: right;
+	padding: 10vh 6vw;
 }
 
-
 .goal h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    color: #195a09;
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	color: #195a09;
 }
 
 .goal p {
-    color: #195a09;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 26px;
+	color: #195a09;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+}
+.image-container-who {
+	border-radius: 30px;
 }
