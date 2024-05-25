@@ -140,3 +140,16 @@ body {
 		opacity: 1;
 	}
 }
+.btnPlaceHolder {
+	background-color: #708e68;
+	color: white; /* Text color */
+	font-size: 1.5vw;
+	padding: 0.5em 1.5em;
+	border-radius: 12px;
+	margin-top: 3vw;
+	margin-bottom: 1vw;
+	border: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
